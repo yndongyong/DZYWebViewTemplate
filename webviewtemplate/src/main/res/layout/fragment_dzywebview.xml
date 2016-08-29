@@ -1,0 +1,30 @@
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+       xmlns:tools="http://schemas.android.com/tools">
+
+
+    <!-- <merge xmlns:android="http://schemas.android.com/apk/res/android">-->
+
+    <!--
+      ~ Unable to use a SwipeRefreshLayout here, because web page can set an onTouchListener for
+      ~ custom scrolling, but SwipeRefreshLayout has no knowledge of this and will intercept the
+      ~ touch event.
+      -->
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="?actionBarSize"/>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:visibility="gone"/>
+
+    
+
+</merge>
