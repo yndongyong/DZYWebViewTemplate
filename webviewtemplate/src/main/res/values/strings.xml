@@ -3,4 +3,7 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reload">重新加载</string>
+    <string name="webview_copy_url">复制链接</string>
+    <string name="webview_open_in_browser">在浏览器中打开</string>
 </resources>

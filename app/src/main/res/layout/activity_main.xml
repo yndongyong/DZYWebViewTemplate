@@ -11,7 +11,8 @@
     tools:context="org.yndongyong.widget.webviewtemplate.demo.MainActivity">
 
     <TextView
+        android:id="@+id/tv_open_web_view"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="打开浏览器"/>
 </RelativeLayout>

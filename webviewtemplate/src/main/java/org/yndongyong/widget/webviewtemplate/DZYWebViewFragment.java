@@ -7,8 +7,10 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.webkit.WebChromeClient;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
+import android.webkit.WebViewClient;
 import android.widget.TextView;
 
 
@@ -68,8 +70,8 @@ public class DZYWebViewFragment extends Fragment {
         webSettings.setJavaScriptEnabled(true);
         // NOTE: This gives double tap zooming.
         webSettings.setUseWideViewPort(true);
-        mWebView.setWebChromeClient(new ChromeClient());
-        mWebView.setWebViewClient(new ViewClient());
+        mWebView.setWebChromeClient(new WebChromeClient());
+        mWebView.setWebViewClient(new WebViewClient());
     }
 
     @Override

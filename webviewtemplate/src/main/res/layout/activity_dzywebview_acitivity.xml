@@ -4,10 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
     tools:context=".DZYWebViewActivity">
 
@@ -22,21 +18,37 @@
         android:paddingLeft="8dp"
         android:paddingRight="8dp"
         app:popupTheme="?actionBarPopupTheme"
+        app:titleMarginStart="8dp"
+        app:navigationIcon="@drawable/ic_arrow_back_black_24dp"
     >
-        <!-- app:titleMarginStart="@dimen/toolbar_title_left_margin"
-         app:navigationIcon="@drawable/back_icon_white_24dp"-->
+        <!--   style="@style/Widget.AppCompat.ProgressBar"-->
 
         <ProgressBar
+
             style="@style/Widget.AppCompat.ProgressBar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_margin="12dp"
+            android:indeterminate="true"
+            android:tint="@android:color/white"
+            android:id="@+id/progressbar"
             android:layout_gravity="right|center_vertical"
         />
     </android.support.v7.widget.Toolbar>
-    
-    <FrameLayout
-        android:id="@+id/container"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
 
+    <WebView
+        android:id="@+id/web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+/>
+
+    <TextView
+        android:id="@+id/error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:visibility="gone"/>
 </LinearLayout>
