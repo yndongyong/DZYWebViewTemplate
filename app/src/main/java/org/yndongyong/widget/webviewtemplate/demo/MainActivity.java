@@ -5,7 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
-import org.yndongyong.widget.webviewtemplate.DZYWebViewActivity;
+import org.yndongyong.widget.webviewtemplate.DYHtml5Activity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 String url = "https://www.baidu.com";
-                Intent intent = DZYWebViewActivity.newInstance(MainActivity.this, url, "标题");
+                Intent intent = DYHtml5Activity.newInstance(MainActivity.this, url, "网页标题",false);
                 startActivity(intent);
             }
         });

@@ -21,7 +21,7 @@
         </activity>
 
         <activity
-            android:name="org.yndongyong.widget.webviewtemplate.DZYWebViewActivity"
+            android:name="org.yndongyong.widget.webviewtemplate.DYHtml5Activity"
 
             android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
 
